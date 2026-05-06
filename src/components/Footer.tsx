@@ -17,6 +17,7 @@ const Footer = () => {
               <ul>
                 <li><Link to="/services">SERVICES</Link></li>
                 <li><Link to="/cases">CASES</Link></li>
+                <li><Link to="/proces">VORES PROCES</Link></li>
                 <li><Link to="/om-mnmedia">OM MNMEDIA</Link></li>
                 <li><Link to="/kontakt">KONTAKTS OS</Link></li>
               </ul>

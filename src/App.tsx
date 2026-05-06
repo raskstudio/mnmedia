@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Cases from './pages/Cases';
+import Proces from './pages/Proces';
 import OmMNmedia from './pages/OmMNmedia';
 import Kontakt from './pages/Kontakt';
 import './styles/global.css';
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/cases" element={<Cases />} />
+            <Route path="/proces" element={<Proces />} />
             <Route path="/om-mnmedia" element={<OmMNmedia />} />
             <Route path="/kontakt" element={<Kontakt />} />
           </Routes>
