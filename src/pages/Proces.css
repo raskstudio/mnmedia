@@ -1,0 +1,62 @@
+.proces-hero-bold {
+  padding-bottom: var(--margin-small);
+}
+
+.intro-text-bold {
+  font-size: 1.5rem;
+  color: var(--accent);
+  max-width: 800px;
+  line-height: 1.2;
+  font-weight: 900;
+  margin-top: var(--margin-small);
+  text-transform: uppercase;
+}
+
+.steps-section-bold {
+  background-color: var(--bg-soft);
+}
+
+.steps-grid-bold {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--grid-gap);
+}
+
+@media (max-width: 1024px) {
+  .steps-grid-bold { grid-template-columns: 1fr; }
+}
+
+.step-card-bold {
+  background-color: var(--bg-dark);
+  padding: var(--margin-element);
+  border-left: 8px solid var(--accent);
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .step-card-bold { padding: 30px 24px; }
+}
+
+.step-number-bold {
+  font-size: 5rem;
+  color: #fff;
+  opacity: 0.05;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-weight: 900;
+}
+
+.step-card-bold h2 {
+  margin-bottom: var(--margin-small);
+  text-transform: uppercase;
+}
+
+.step-card-bold p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+}

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  /* BOLD Design Tokens */
+  --bg-dark: #0a0a0a;
+  --bg-soft: #141414;
+  --bg-card: #1c1c1c;
+  --text-primary: #ffffff;
+  --text-muted: #a1a1aa;
+  
+  /* BOLD Colors */
+  --accent: #009866;
+  --accent-hover: #16A34A;
+  
+  /* BOLD Fonts */
+  --font-heading: 'Archivo Black', sans-serif;
+  --font-body: 'Archivo', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing Scale - THE RHYTHM SYSTEM */
+  --nav-height: 80px;
+  --page-top-padding: 100px;
+  --section-spacing: 80px;   /* Space between sections */
+  --margin-element: 40px;    /* Standard space between elements (h1 to p, p to btn) */
+  --margin-small: 20px;      /* Tight space */
+  
+  /* Width Tokens */
+  --container-width: 1300px;
+  --max-content-width: 900px;
+  --grid-gap: 60px;
+  --grid-gap-small: 24px;
+  
+  --border-width: 1px;
+  --border-color: var(--bg-card);
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --page-top-padding: 80px;
+    --section-spacing: 60px;
+    --margin-element: 30px;
+    --grid-gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 70px;
+    --page-top-padding: 70px;
+    --section-spacing: 40px;
+    --margin-element: 24px;
+    --grid-gap: 32px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--bg-dark);
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Universal Page Wrapper */
+.page-wrapper {
+  padding-top: var(--page-top-padding);
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Standard Section Padding - CALCULATED */
+.section {
+  padding: calc(var(--section-spacing) / 2) 0;
+  width: 100%;
+}
+
+/* Typography Consistency */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  font-weight: 900;
+  margin-bottom: var(--margin-small);
+}
+
+h1 { font-size: 7.5rem; margin-bottom: var(--margin-element); }
+h2 { font-size: 4rem; }
+h3 { font-size: 2.5rem; }
+
+@media (max-width: 1200px) {
+  h1 { font-size: 5rem; }
+  h2 { font-size: 3rem; }
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; letter-spacing: -1px; }
+  h2 { font-size: 1.8rem; letter-spacing: -1px; }
+  h3 { font-size: 1.5rem; }
+}
+
+p, li, .service-card-bold p, .case-desc-bold {
+  text-transform: none !important;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: var(--margin-small);
+}
+
+p:last-child { margin-bottom: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+ul { list-style: none; }
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 32px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0 24px; }
+}
+
+/* BOLD Buttons */
+.btn {
+  display: inline-block;
+  padding: 18px 36px;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  text-align: center;
+  font-weight: 900;
+}
+
+.btn-primary { background-color: var(--accent); color: white; }
+.btn-primary:hover { transform: scale(1.05); background-color: #16A34A; }
+.btn-white { background-color: #fff; color: #000; }
+.btn-white:hover { transform: scale(1.05); background-color: var(--accent); color: #fff; }
+
+@media (max-width: 768px) {
+  .btn { padding: 14px 28px; font-size: 0.9rem; width: 100%; }
+}
+
+.text-muted {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
