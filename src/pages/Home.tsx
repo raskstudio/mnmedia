@@ -7,10 +7,15 @@ const Home = () => {
       {/* BOLD Hero Section */}
       <section className="hero-section">
         <div className="hero-background">
-          <img 
-            src="https://images.unsplash.com/photo-1574717024453-354056afd69c?auto=format&fit=crop&w=2000&q=80" 
-            alt="Cinematic Camera Setup" 
-          />
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline 
+            className="hero-video"
+          >
+            <source src="/videos/hero-bg.mp4" type="video/mp4" />
+          </video>
           <div className="hero-overlay"></div>
         </div>
         
@@ -95,7 +100,15 @@ const Home = () => {
 
             <div className="case-card-bold">
               <div className="case-image-bold">
-                <img src="/images/Viston-x-mn-media.jpg" alt="Viston Entreprise case" />
+                <video 
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline 
+                  className="case-video-preview"
+                >
+                  <source src="/videos/viston-case.mp4" type="video/mp4" />
+                </video>
                 <div className="case-overlay-bold">
                   <span className="case-result-bold">Brand strategi</span>
                 </div>
