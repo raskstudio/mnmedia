@@ -8,11 +8,8 @@ const Navbar = () => {
 
   // Close menu when location changes
   useEffect(() => {
-    if (isOpen) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setIsOpen(false);
-    }
-  }, [location, isOpen]);
+    setIsOpen(false);
+  }, [location]);
 
   // Prevent scroll when menu is open
   useEffect(() => {
