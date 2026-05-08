@@ -85,7 +85,7 @@ const Home = () => {
             
             <div className="case-card-bold">
               <div className="case-image-bold">
-                <img src="https://images.unsplash.com/photo-1530124560612-4eb9a194380f?auto=format&fit=crop&w=800&q=80" alt="Værktøj og detaljer" />
+                <img src="/images/AO-x-mn-media.jpg" alt="AO Byggeri case" />
                 <div className="case-overlay-bold">
                   <span className="case-result-bold">18 konkrete leads</span>
                 </div>
@@ -95,7 +95,7 @@ const Home = () => {
 
             <div className="case-card-bold">
               <div className="case-image-bold">
-                <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80" alt="Strategi og planlægning" />
+                <img src="/images/Viston-x-mn-media.jpg" alt="Viston Entreprise case" />
                 <div className="case-overlay-bold">
                   <span className="case-result-bold">Brand strategi</span>
                 </div>

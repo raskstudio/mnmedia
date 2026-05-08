@@ -13,14 +13,14 @@ const casesData = [
     category: "Sociale medier",
     description: "Opbygning af en stærk visuel identitet på Instagram og Facebook.",
     resultat: "+100% visninger",
-    image: "https://images.unsplash.com/photo-1530124560612-4eb9a194380f?auto=format&fit=crop&w=1200&q=80"
+    image: "/images/AO-x-mn-media.jpg"
   },
   {
     title: "Viston Entreprise A/S",
     category: "Content",
     description: "Professionel videoproduktion af deres største byggeprojekter.",
     resultat: "Brand strategi & video",
-    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=1200&q=80"
+    image: "/images/Viston-x-mn-media.jpg"
   },
   {
     title: "Nordic Homes",
