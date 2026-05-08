@@ -3,6 +3,11 @@
 ## Formål
 Dette projekt er en portfolio-hjemmeside for MNmedia, en medieproduktionsvirksomhed.
 
+## Arbejdsgang & Git
+- **INGEN AUTOMATISK PUSH:** Du må aldrig køre `git push` uden eksplicit tilladelse fra brugeren. Dette gælder uanset opgavens art.
+- **Commits:** Du må gerne forberede og lave commits, når opgaver er færdige, men vent altid på besked før push.
+- **Store filer:** Vær opmærksom på filstørrelser (f.eks. videoer), da de kan blokere for pushes til GitHub.
+
 ## Statisk Opbygning
 Hjemmesiden består af følgende sider og komponenter:
 

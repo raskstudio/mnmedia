@@ -7,15 +7,26 @@ const Home = () => {
       {/* BOLD Hero Section */}
       <section className="hero-section">
         <div className="hero-background">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline 
-            className="hero-video"
-          >
-            <source src="/videos/hero-bg.mp4" type="video/mp4" />
-          </video>
+          <div className="hero-video-split">
+            <video 
+              autoPlay 
+              muted 
+              loop 
+              playsInline 
+              className="hero-video-part"
+            >
+              <source src="/videos/hero-bg.mp4" type="video/mp4" />
+            </video>
+            <video 
+              autoPlay 
+              muted 
+              loop 
+              playsInline 
+              className="hero-video-part desktop-only-video"
+            >
+              <source src="/videos/tag-renovering.mp4" type="video/mp4" />
+            </video>
+          </div>
           <div className="hero-overlay"></div>
         </div>
         
